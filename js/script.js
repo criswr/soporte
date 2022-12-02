@@ -1,6 +1,6 @@
 import { appsData } from "./appsData.js";
 
-const baseUrl = "https://certi.cl/soporte/"
+const baseUrl = "https://locu.cl/soporte/"
 const params = new URLSearchParams(window.location.search);
 const apps = ["locu", "certi"];
 let app = "locu";
