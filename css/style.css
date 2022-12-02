@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --platinum: #e6e6e9ff;
+    --cultured: #f4f4f6ff;
+    --accent: #f45b69ff;
+    --davys-grey: rgb(92, 91, 90);
+    --charcoal: #373f51ff;
+}
+
+body {
+    background-color: var(--accent);
+}
+
+a {
+    text-decoration: none;
+}
+
+.invisible {
+    display: none;
+}
+
+.logo {
+    height: 22px;
+}
+
+.smallShadow {
+    filter: drop-shadow(0px 2px 4px #00000065);
+}
+
+.soporte {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    width: 100%;
+    max-width: 1000px;
+    padding: 15px;
+}
+
+.alert {
+    background-color: var(--davys-grey);
+    color: var(--platinum);
+    text-align: center;
+    margin: 0 10%;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+.windowTop {
+    background-color: var(--charcoal);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13px;
+}
+
+.topContainer {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.topButton {
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent);
+    border-radius: 50px;
+    margin-right: 3px;
+}
+
+.topButton:nth-child(2) {
+    background-color: rgb(247, 247, 128);
+}
+
+.topButton:nth-child(3) {
+    background-color: rgb(74, 207, 74);
+}
+
+.topDots {
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50px;
+    margin-left: 3px;
+}
+
+.window {
+    background-color: var(--davys-grey);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+    box-shadow: 0px 20px 50px -7px rgba(0,0,0,0.5);
+}
+
+
+.formTitle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: var(--accent);
+    font-size: 26px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.formTitle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 3px;
+    bottom: -3px;
+    width: 50px;
+    height: 2px;
+    background: var(--accent);
+}
+
+.windowImput {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+    outline: none;
+    transition: border-color .2s;
+    background-color: var(--davys-grey);
+    resize: none;
+}
+
+.windowImput::placeholder {
+    color: var(--cultured);
+}
+
+.windowImput:focus {
+    border-bottom-color: var(--platinum);
+}
+
+.windowButton {
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: color .1s;
+    margin: 15px 10px 0;
+    text-transform: uppercase;
+}
+
+.windowButton:hover {
+    color: var(--platinum);
+}
+
+.form {
+    text-align: right;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    width: 50px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .window {
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+
+    .formTitle {
+        width: 30%;
+    }
+
+    .contactForm {
+        width: 70%;
+    }
+}

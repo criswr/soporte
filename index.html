@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" type="module" defer></script>
+    <link rel="shortcut icon" href="./images/logo-locu.svg" type="image/x-icon">
+    <title>Soporte</title>
+</head>
+<body>
+    <div class="container">
+
+        <header class="section">
+            <a href="https://locu.cl">
+                <h1 id="appHeader" class="smallShadow"><img src="./images/logo-locu.svg" alt="Locu" class="logo" id="logo"> <span>Locu</span> <span class="soporte">soporte</span></h1>
+            </a>
+        </header>
+        
+
+        <section class="section main">
+
+            <div class="alert invisible" id="alert">
+                Hemos recibido tu mensaje 🤓
+            </div>
+
+            <div>
+                <div class="windowTop">
+                    <div class="topContainer">
+                        <div class="topButton"></div>
+                        <div class="topButton"></div>
+                        <div class="topButton"></div>
+                    </div>
+                    <div class="topContainer">
+                        <div class="topDots"></div>
+                        <div class="topDots"></div>
+                        <div class="topDots"></div>
+                    </div>
+                </div>
+                
+                <div class="window">
+                    <div class="formTitle">
+                        Soporte
+                    </div>
+                    <div class="contactForm">
+                        <!-- Your personal formsubmit.io link, do not use the one included: -->
+                        <form action="https://formsubmit.co/4a7a0a88f214c4c71fc47542a62d370b" method="POST" class="form">
+                            <input type="text" name="name" placeholder="Nombre" class="windowImput" required>
+                            <input type="email" name="email" placeholder="Email" class="windowImput" required>
+                            <select name="_subject" class="windowImput" id="subject" required>
+                                <option value="" disabled selected>Motivo...</option>
+                            </select>
+                            <textarea name="message" class="windowImput" placeholder="Mensaje"></textarea>
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" id="next" value="">
+                            <button type="submit" class="windowButton">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+        
+
+        <div class="section links smallShadow" id="links"></div>
+
+
+        <footer class="section footer smallShadow">
+            <p><a href="https://locu.cl">Locu</a></p>
+        </footer>
+
+    </div>
+</body>
+</html>
