@@ -10,4 +10,4 @@
 * Test the different apps by clicking the icons at the bottom of the page.
 
 ### 👤 Connect:
-[LinkedIn](https://www.linkedin.com/in/criswr)
+[LinkedIn](https://www.linkedin.com/in/criswr) 
